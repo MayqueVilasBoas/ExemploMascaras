@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="exemploMascara">
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo de utilização de mascaras</title>
+
+        <!--JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--JQuery Mask-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <!--Angular JS-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+        <!--meu estilo-->
+        <link rel="stylesheet" href="css/estilo.css">
+
+        <!--direiva mascaras-->
+        <script type="text/javascript" src="js/directive/mascarasDirective.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                <div class="panel panel-primary semBorda">
+                    <!----------------------------------------------------------->
+                    <!--                titulo da tela \                       -->
+                    <!----------------------------------------------------------->
+                    <div class="panel-heading">Exemplo Mascaras</div>
+                    <div class="panel-body">
+                        <!----------------------------------------------------------->
+                        <!--                corpo da tela                          -->
+                        <!----------------------------------------------------------->
+                        <div class="row">
+                            <div class="col-md-2">
+                                 <label>Telefone</label>
+                                <input class="form-control" type="text" mask-telefone>
+                                <label>CPF</label>
+                                <input class="form-control" type="text" mask-cpf>
+                                <label>CNPJ</label>
+                                <input class="form-control" type="text" mask-cnpj>
+                                <label>CEP</label>
+                                <input class="form-control" type="text" mask-cep>
+                                <label>Numero 2 casas decimais</label>
+                                <input class="form-control" type="text" mask-decimal="2" ng-model="cValor">
+                                <label>Numero 3 casas decimais</label>
+                                <input class="form-control" type="text" mask-decimal="3" ng-model="cValor2">
+                                <label>Numero 4 casas decimais</label>
+                                <input class="form-control" type="text" mask-decimal="4" ng-model="cValor2">
+                            </div>
+                            <div class="col-md-2">
+                                <label>Placa</label>
+                                <input class="form-control" type="text" mask-placa ng-model="cPlaca">
+                                <label>IP</label>
+                                <input class="form-control" type="text" mask-ip>
+                                <label>Data</label>
+                                <input class="form-control" type="text" mask-data>
+                                <label>Hora</label>
+                                <input class="form-control" type="text" mask-hora>
+                                <label>RG</label>
+                                <input class="form-control" type="text" mask-rg>
+                                <label>Maiúsculas</label>
+                                <input class="form-control" type="text" mask-maiusculas ng-model="cCampo">
+                                <label>Minúsculas</label>
+                                <input class="form-control" type="text" mask-minusculas ng-model="cCampo2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
